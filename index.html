@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neon Pulse — Mini Game & Utility Hub</title>
+  <style>
+    :root {
+      --bg: #070913;
+      --panel: #0e1326;
+      --panel-2: #141b36;
+      --border: rgba(255, 255, 255, 0.09);
+      --cyan: #00f0ff;
+      --purple: #b026ff;
+      --pink: #ff2a85;
+      --green: #00ff9d;
+      --text: #f3f6ff;
+      --muted: #8b95b7;
+    }
+
+    * {
+      box-sizing: border-box;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(0, 240, 255, 0.14), transparent 35%),
+        radial-gradient(circle at 85% 15%, rgba(176, 38, 255, 0.16), transparent 40%),
+        var(--bg);
+      color: var(--text);
+      padding: 20px 14px 48px;
+    }
+
+    .app {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      background: rgba(14, 19, 38, 0.88);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 16px 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 1.45rem;
+      letter-spacing: 0.5px;
+      background: linear-gradient(90deg, var(--cyan), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .brand p {
+      margin: 3px 0 0;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .sound-btn {
+      background: var(--panel-2);
+      color: var(--text);
+      border: 1px solid rgba(0, 240, 255, 0.35);
+      border-radius: 999px;
+      padding: 9px 15px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .sound-btn:hover {
+      border-color: var(--cyan);
+      box-shadow: 0
+    
